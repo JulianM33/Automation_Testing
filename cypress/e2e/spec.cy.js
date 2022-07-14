@@ -2,7 +2,7 @@ describe('empty spec', () => {
   it('passes', () => {
 
     const email = 'j.a.m.meijerink@student.tudelft.nl'
-    const password = 'Ferrar123!'
+    const password = 'Ferrari123!'
 
     // Given we are at the login page:
     cy.visit('https://wave-trial.getbynder.com/login/')
