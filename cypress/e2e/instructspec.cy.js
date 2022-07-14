@@ -35,7 +35,23 @@ describe('empty test', () => {
     cy.url().should('eq', 'https://www.instructables.com/')
 
     // And Then we are logged out
-    cy.contains('Log In')
+    cy.contains('Log In')    
+    
+    cy.get('a[href*="login"]').click()
+
+    // When filling in incorrect credentials
+    cy.get('.input-large').first()
+    .type('email', {force: true})
+
+    cy.get('.input-large').eq(1)
+    .type('password', {force: true})
+
+    // And login button is clicked
+    cy.get('.btn.btn-large.btn-primary.btn-yellow.auth-action.login').click({force: true})
+    cy.wait(500)
+    
+    // Then we obtain error message
+    cy.contains('Sorry, we can\'t find that account, or your password didn\'t match. Please try again!')
     
   })
 })
