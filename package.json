@@ -1,0 +1,19 @@
+{
+  "name": "package",
+  "version": "1.0.0",
+  "description": "default package",
+  "main": "cypress.config.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JulianM33/Automation_Testing.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JulianM33/Automation_Testing/issues"
+  },
+  "homepage": "https://github.com/JulianM33/Automation_Testing#readme"
+}
